@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b995d5b9-a36f-4e46-8a4a-03186b93c2c1" name="Changes" comment="">
+    <list default="true" id="b995d5b9-a36f-4e46-8a4a-03186b93c2c1" name="Changes" comment="começando a pensar nas classes e estrutura do sistema 2">
+      <change afterPath="$PROJECT_DIR$/src/conversores/ConversorEnderecoParaJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/conversores/ConversorJsonParaEndereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/conexoes/Conexao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conexoes/Conexao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/excecoes/EntradaErradaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/excecoes/EntradaErradaException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelos/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelos/Endereco.java" afterDir="false" />
@@ -25,9 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2lgCYMtmA3YpHrxPe0aigKomOyg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -36,8 +39,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/thale/Downloads/gson-2.11.0.jar",
@@ -60,11 +65,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725592379195</updated>
-      <workItem from="1725592380186" duration="2690000" />
+      <workItem from="1725592380186" duration="2782000" />
+      <workItem from="1725656085340" duration="4523000" />
     </task>
+    <task id="LOCAL-00001" summary="começando a pensar nas classes e estrutura do sistema">
+      <option name="closed" value="true" />
+      <created>1725595959964</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725595959964</updated>
+    </task>
+    <task id="LOCAL-00002" summary="começando a pensar nas classes e estrutura do sistema 2">
+      <option name="closed" value="true" />
+      <created>1725595984085</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725595984085</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="começando a pensar nas classes e estrutura do sistema" />
+    <MESSAGE value="começando a pensar nas classes e estrutura do sistema 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="começando a pensar nas classes e estrutura do sistema 2" />
   </component>
 </project>

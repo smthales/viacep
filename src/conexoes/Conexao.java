@@ -12,10 +12,9 @@ public class Conexao {
 
     public Conexao(String cep) {
 
-        if(cep.length() < 8) {
-            throw new EntradaErradaException("Formato incorreto de CEP");
+        if((cep.length() != 8) || (!cep.matches("\\d{8}"))) {
+            throw new EntradaErradaException("Entrada incorreta de CEP");
         }
-
 
         this.cep = cep;
     }

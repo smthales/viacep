@@ -5,16 +5,14 @@ public class Endereco {
     private String logradouro;
     private String bairro;
     private String localidade;
-    private String cidade;
     private String regiao;
     private int ddd;
 
-    public Endereco(String cep, String logradouro, String bairro, String localidade, String cidade, String regiao, int ddd) {
+    public Endereco(String cep, String logradouro, String bairro, String localidade, String regiao, int ddd) {
         this.cep = cep;
         this.logradouro = logradouro;
         this.bairro = bairro;
         this.localidade = localidade;
-        this.cidade = cidade;
         this.regiao = regiao;
         this.ddd = ddd;
     }
@@ -35,10 +33,6 @@ public class Endereco {
         return localidade;
     }
 
-    public String getCidade() {
-        return cidade;
-    }
-
     public String getRegiao() {
         return regiao;
     }
@@ -54,9 +48,8 @@ public class Endereco {
                 Logradouro: %s
                 Bairro: %s
                 Localidade: %s
-                Cidade: %s
                 Região: %s
                 DDD: %d
-                """, this.cep, this.logradouro, this.bairro, this.localidade, this.cidade, this.regiao, this.ddd);
+                """, this.cep, this.logradouro, this.bairro, this.localidade, this.regiao, this.ddd);
     }
 }

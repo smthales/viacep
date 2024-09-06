@@ -1,19 +1,32 @@
 package principal;
 
-import com.google.gson.Gson;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
+import java.io.IOException;
+import java.util.Scanner;
 
-import conexoes.Conexao;
+import conversores.ConversorJsonParaEndereco;
+import excecoes.EntradaErradaException;
+import modelos.Endereco;
+import conversores.ConversorEnderecoParaJson;
 
 public class Main {
     public static void main(String[] args) {
-        Gson gson = new Gson();
+        Scanner sc = new Scanner(System.in);
 
-        Conexao conexao = new Conexao("aaa");
+        try {
+            ConversorJsonParaEndereco conversorJsonParaEndereco = new ConversorJsonParaEndereco(sc.nextLine());
+            Endereco endereco = conversorJsonParaEndereco.converterJsonParaEndereco();
+            System.out.println(endereco);
 
+            ConversorEnderecoParaJson conversor = new ConversorEnderecoParaJson(endereco);
+            conversor.converterObjetoParaJson();
+
+        } catch(EntradaErradaException e) {
+            System.out.println(e.getMessage());
+        } catch (IOException | InterruptedException e) {
+            throw new RuntimeException(e);
+        } finally {
+            sc.close();
+        }
 
     }
-
 }
